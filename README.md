@@ -30,6 +30,7 @@ O objetivo foi construir uma api simples para o gerenciamento de uma loja fictí
 ```
 src/
 ├── cliente/
+├── config/
 ├── funcionario/
 ├── produto/
 ├── venda/
