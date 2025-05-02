@@ -50,28 +50,12 @@ npm install
 
 ### 2. Configure o banco de dados MySQL
 
-Crie um banco chamado `store_db` e certifique-se de que o MySQL está rodando localmente.
+Crie um banco chamado `store_db`
 
-> Se preferir, você pode usar Docker ou XAMPP.
-
-### 3. Configure o `.env`
-
-Crie um arquivo `.env` na raiz do projeto:
-
-```
-DB_HOST=localhost
-DB_PORT=3306
-DB_USERNAME=root
-DB_PASSWORD=
-DB_NAME=store_db
-```
-
-### 4. Inicie o projeto
+### 3. Inicie o projeto
 ```bash
-npm run start:dev
+npm run start
 ```
-
----
 
 ## Script das tabelas
 
@@ -105,7 +89,7 @@ Se quiser criar as tabelas manualmente, tem o arquivo disponibilizado:
 - `DELETE /produtos/:id`
 
 ### Vendas
-- `POST /vendas` - realiza uma venda e baixa o estoque
+- `POST /vendas` - realiza uma venda e as baixas do estoque
 - `GET /vendas` - lista todas as vendas com os relacionamentos
 
 ---
