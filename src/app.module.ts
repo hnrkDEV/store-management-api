@@ -4,6 +4,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ClienteModule } from './cliente/cliente.module';
 import { FuncionarioModule } from './funcionario/funcionario.module';
+import { ProdutoModule } from './produto/produto.module';
+import { VendaModule } from './venda/venda.module';
 
 @Module({
   imports: [
@@ -19,6 +21,8 @@ import { FuncionarioModule } from './funcionario/funcionario.module';
     }),
     ClienteModule,
     FuncionarioModule,
+    ProdutoModule,
+    VendaModule,
   ],
   controllers: [AppController],
   providers: [AppService],
