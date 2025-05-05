@@ -20,8 +20,14 @@ export class ClienteService {
     return this.clienteRepo.find();
   }
 
-  async findOne(id: number): Promise<Cliente | null> {
-    return this.clienteRepo.findOne({ where: { id } });
+  async findOne(id: number): Promise<Cliente> {
+    const cliente = await this.clienteRepo.findOne({ where: { id } });
+  
+    if (!cliente) {
+      throw new NotFoundException('Cliente não encontrado');
+    }
+  
+    return cliente;
   }
 
   async update(id: number, data: Partial<CreateClienteDto>): Promise<Cliente> {
