@@ -20,7 +20,7 @@ describe('ProdutoService', () => {
 
   const mockProduto = {
     id: 1,
-    nome: 'PC Gamer ultra mega blaster high end',
+    nome: 'PC gamer de ultima geração high end top de linha',
     valor: 2999.99,
     estoque: 10,
     criadoEm: new Date(),

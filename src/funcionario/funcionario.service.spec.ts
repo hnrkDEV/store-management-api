@@ -20,8 +20,8 @@ describe('FuncionarioService', () => {
 
   const mockFuncionario = {
     id: 1,
-    nome: 'Felipe',
-    email: 'felipe@Cattavento.com.br',
+    nome: 'Felipe Teste',
+    email: 'felipe@cattavento.com.br',
     senha: '123456',
     criadoEm: new Date(),
   };

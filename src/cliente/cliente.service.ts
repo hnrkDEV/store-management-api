@@ -21,13 +21,13 @@ export class ClienteService {
   }
 
   async findOne(id: number): Promise<Cliente> {
-  const cliente = await this.clienteRepo.findOne({ where: { id } });
-
-  if (!cliente) {
-    throw new NotFoundException('Cliente não encontrado');
-  }
-
-  return cliente;
+    const cliente = await this.clienteRepo.findOne({ where: { id } });
+  
+    if (!cliente) {
+      throw new NotFoundException('Cliente não encontrado');
+    }
+  
+    return cliente;
   }
 
   async update(id: number, data: Partial<CreateClienteDto>): Promise<Cliente> {

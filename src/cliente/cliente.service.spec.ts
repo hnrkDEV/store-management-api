@@ -21,7 +21,7 @@ describe('ClienteService', () => {
   const mockCliente = {
     id: 1,
     nome: 'João Henrique',
-    email: 'joao@example.com',
+    email: 'joao@gmail.com',
     cpf: '12345678900',
     senha: 'senha123',
   };
