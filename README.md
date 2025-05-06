@@ -97,10 +97,41 @@ Se quiser criar as tabelas manualmente, tem o arquivo disponibilizado:
 
 ## Observações:
 
-- O projeto não inclui testes automatizados por não serem exigidos no desafio.
 - Toda a lógica de negócio está centralizada nos services.
 - Os logs de criação de vendas, estoques e erros podem ser consultados via terminal ou no arquivo `logs/app.log`.
 
 ---
+
+## Documentação via Swagger
+
+A documentação interativa da API foi adicionada com Swagger, permitindo testes diretos dos endpoints via navegador.
+
+Acesse:
+
+```
+http://localhost:3000/api
+```
+
+---
+
+## Testes automatizados
+
+Foram implementados testes unitários com Jest nos services dos seguintes módulos:
+
+- Cliente
+- Funcionário
+- Produto
+- Venda
+
+Os testes cobrem os principais fluxos de criação, busca, atualização, exclusão e cenários de erro.
+
+Para executar:
+
+```bash
+npm run test
+```
+
+---
+
 João Henrique  
-Projeto feito como parte de um desafio técnico.  
+Projeto feito como parte de um desafio técnico.
