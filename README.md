@@ -8,6 +8,7 @@ O objetivo foi construir uma api simples para o gerenciamento de uma loja fictí
 ## Tecnologias utilizadas:
 
 - NestJS – estrutura principal da API
+- Jest – para realização de testes
 - TypeORM – ORM para manipulação do banco
 - MySQL – banco de dados relacional
 - Winston – logs estruturados
